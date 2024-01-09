@@ -9,7 +9,7 @@ export default function Header() {
       >
         Kawsar
       </Link>
-      <div className="flex flex-row items-center gap-2">
+      <div className="flex flex-row items-center">
         <Link
           className="rounded-md p-2 hover:bg-gray-100 hover:font-semibold duration-150"
           href={'/services'}
@@ -17,13 +17,13 @@ export default function Header() {
           Services
         </Link>
         <Link
-          className="rounded-md p-2 hover:bg-gray-100 hover:font-semibold"
+          className="rounded-md p-2 hover:bg-gray-100 hover:font-semibold duration-150"
           href={'/experiences'}
         >
           Experiences
         </Link>
         <Link
-          className="rounded-md p-2 hover:bg-gray-100 hover:font-semibold"
+          className="rounded-md p-2 hover:bg-gray-100 hover:font-semibold duration-150"
           href={'/skills'}
         >
           Skills
