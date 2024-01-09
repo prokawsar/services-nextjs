@@ -4,7 +4,7 @@ import Services from './sections/Services'
 
 export default function Home() {
   return (
-    <main className="flex flex-col mx-auto w-full items-center">
+    <main className="flex flex-col min-h-screen mx-auto w-full items-center">
       <Hero />
       <Services />
     </main>
