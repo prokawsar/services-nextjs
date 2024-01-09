@@ -6,14 +6,14 @@ type Props = {
   url: string
   name?: string
   target?: string
-  icon?: IconProp
+  icon?: IconProp | null
   iconSize?: SizeProp
 }
 
 export default function NavItem({
   name = '',
   url,
-  icon = '0',
+  icon = null,
   iconSize = '1x',
   target,
 }: Props) {
@@ -25,8 +25,9 @@ export default function NavItem({
     >
       <span className="text-lg">{name[0]}</span>
       {name.substring(1, name.length)}
-
-      <FontAwesomeIcon className="!h-5 !w-5" icon={icon} />
+      {icon !== null && (
+        <FontAwesomeIcon className="!h-5 !w-5" icon={icon as IconProp} />
+      )}
     </Link>
   )
 }
