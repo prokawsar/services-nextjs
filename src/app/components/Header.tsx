@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import NavItem from './NavItem'
 
 export default function Header() {
   return (
@@ -11,24 +12,9 @@ export default function Header() {
           Kawsar
         </Link>
         <div className="flex flex-row items-center">
-          <Link
-            className="rounded-md p-2 hover:bg-gray-100 hover:font-semibold duration-150"
-            href={'/services'}
-          >
-            Services
-          </Link>
-          <Link
-            className="rounded-md p-2 hover:bg-gray-100 hover:font-semibold duration-150"
-            href={'/experiences'}
-          >
-            Experiences
-          </Link>
-          <Link
-            className="rounded-md p-2 hover:bg-gray-100 hover:font-semibold duration-150"
-            href={'/skills'}
-          >
-            Skills
-          </Link>
+          <NavItem name="Services" url="/services" />
+          <NavItem name="experiences" url="/experiences" />
+          <NavItem name="skills" url="/skills" />
         </div>
       </div>
     </div>
