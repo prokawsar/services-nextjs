@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import NavItem from './NavItem'
+import NavItem from '@/app/components/NavItem'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import {
   faGithub,
@@ -18,10 +18,10 @@ export default function Header() {
           </span>
         </Link>
         <div className="flex flex-row items-center">
-          <NavItem name="Services" url="/services" />
-          <NavItem name="experiences" url="/experiences" />
-          <NavItem name="skills" url="/skills" />
-          <NavItem name="contact" url="/contact" />
+          <NavItem name="Services" url="#services" />
+          <NavItem name="experiences" url="#experiences" />
+          <NavItem name="skills" url="#skills" />
+          <NavItem name="contact" url="#contact" />
           <NavItem
             url="https://github.com/prokawsar"
             icon={faGithub}

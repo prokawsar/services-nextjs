@@ -1,5 +1,6 @@
 import Image from 'next/image'
-import HeroImage from '../../../public/images/hero-bg.jpg'
+import HeroImage from '@/../public/images/hero-bg.jpg'
+
 export default function Hero() {
   return (
     <div className="relative z-0 h-full w-full">

@@ -1,8 +1,11 @@
-import Card from '../components/Card'
+import Card from '@/app/components/Card'
 
 export default function Services() {
   return (
-    <div className="flex w-full max-w-6xl items-center mx-auto mt-10">
+    <div
+      id="services"
+      className="flex w-full max-w-6xl items-center mx-auto mt-10"
+    >
       <div className="flex flex-row gap-3 w-full justify-between">
         <Card
           className="flex-1 items-center justify-center"
