@@ -4,9 +4,9 @@ export default function Services() {
   return (
     <div
       id="services"
-      className="flex w-full h-96 justify-center bg-gray-50 items-center mx-auto py-10"
+      className="flex w-full h-96 justify-center bg-gray-50 items-center mx-auto py-10 px-5"
     >
-      <div className="flex  max-w-6xl flex-row gap-3 w-full justify-between">
+      <div className="grid grid-cols-2 sm:flex max-w-6xl flex-row gap-3 w-full justify-between">
         <Card
           className="flex-1 items-center justify-center"
           title="Web Development"

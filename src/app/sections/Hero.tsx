@@ -12,7 +12,7 @@ export default function Hero() {
       />
       <div className="absolute top-0 w-full pt-40">
         <div className="flex flex-row w-full justify-between max-w-6xl items-center mx-auto">
-          <div>
+          <div className="px-5">
             <p className="text-5xl font-bold">Hello, I'm Kawsar Ahmed</p>
             <p className="text-lg mt-5">
               I have been working as Frontend Engineer around 5 years <br />

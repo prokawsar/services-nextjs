@@ -8,6 +8,7 @@ type Props = {
   target?: string
   icon?: IconProp | null
   iconSize?: SizeProp
+  className?: string
 }
 
 export default function NavItem({
@@ -16,10 +17,14 @@ export default function NavItem({
   icon = null,
   iconSize = '1x',
   target,
+  className,
 }: Props) {
   return (
     <Link
-      className="rounded-md flex items-center py-1 p-2 text-sm uppercase hover:bg-gray-100 hover:border-b-2 hover:border-t-2 hover:border-yellow-400 duration-100"
+      className={
+        'rounded-md flex items-center py-1 p-2 text-sm uppercase hover:bg-gray-100 hover:border-b-2 hover:border-t-2 hover:border-yellow-400 duration-100 ' +
+        className
+      }
       href={url}
       target={target}
     >
