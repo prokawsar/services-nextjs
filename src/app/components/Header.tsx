@@ -9,7 +9,7 @@ import {
 
 export default function Header() {
   return (
-    <div className="fixed top-0 z-10 w-full flex justify-center">
+    <div className="fixed top-0 z-10 w-full flex justify-center bg-white bg-opacity-40 backdrop-blur-md">
       <div className="flex flex-row w-full mx-auto max-w-6xl justify-between py-5">
         <Link href={'/'} className="font-bold uppercase">
           <span className="text-4xl font-extrabold">K</span>

@@ -1,27 +1,27 @@
 import Card from '@/app/components/Card'
 
-export default function Services() {
+export default function Skills() {
   return (
     <div
-      id="services"
-      className="flex w-full max-w-6xl h-96 items-center mx-auto py-10"
+      id="skills"
+      className="flex w-full h-96 items-center justify-center mx-auto bg-yellow-500 py-10"
     >
-      <div className="flex flex-row gap-3 w-full justify-between">
+      <div className="flex max-w-6xl flex-row gap-3 w-full justify-between">
         <Card
           className="flex-1 items-center justify-center"
-          title="Web Development"
+          title="JavaScript, TypeScript"
         />
         <Card
           className="flex-1 items-center justify-center"
-          title="Mobile App Development"
+          title="React, Nextjs"
         />
         <Card
           className="flex-1 items-center justify-center"
-          title="Dashboard Development"
+          title="Svelte, SvelteKit"
         />
         <Card
           className="flex-1 items-center justify-center"
-          title="Landing page Development"
+          title="Tailwind, Bootstrap, Bulma"
         />
       </div>
     </div>

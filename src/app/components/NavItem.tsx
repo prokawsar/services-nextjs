@@ -19,7 +19,7 @@ export default function NavItem({
 }: Props) {
   return (
     <Link
-      className="rounded-md flex items-center p-2 text-sm uppercase hover:bg-gray-100 hover:font-semibold duration-150"
+      className="rounded-md flex items-center py-1 p-2 text-sm uppercase hover:bg-gray-100 hover:border-b-2 hover:border-t-2 hover:border-yellow-400 duration-100"
       href={url}
       target={target}
     >
