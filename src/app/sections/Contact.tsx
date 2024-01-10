@@ -6,7 +6,7 @@ export default function Contact() {
       id="contact"
       className="flex flex-col-reverse sm:flex-row gap-10 w-full justify-between max-w-6xl items-center mx-auto py-10"
     >
-      <div className="flex-1 flex-col w-full px-5">
+      <div className="flex-1 flex-col w-full px-5 sm:px-0">
         <div className="w-full flex flex-col gap-5">
           <input
             className="p-2 rounded-md outline outline-slate-200 w-full"
