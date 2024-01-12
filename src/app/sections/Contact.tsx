@@ -1,8 +1,14 @@
 import Card from '@/app/components/Card'
 import dynamic from 'next/dynamic'
+import Loader from '../components/Loader'
 
 const DynamicMap = dynamic(() => import('../components/Map'), {
   ssr: false,
+  loading: () => (
+    <div className="flex justify-center items-center h-full w-full">
+      <Loader />
+    </div>
+  ),
 })
 
 export default function Contact() {
