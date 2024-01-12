@@ -1,4 +1,9 @@
 import Card from '@/app/components/Card'
+import dynamic from 'next/dynamic'
+
+const DynamicMap = dynamic(() => import('../components/Map'), {
+  ssr: false,
+})
 
 export default function Contact() {
   return (
@@ -45,7 +50,9 @@ export default function Contact() {
           </button>
         </div>
       </div>
-      <div className="flex-1">Map section</div>
+      <div className="flex-1 h-80 w-full rounded-md">
+        <DynamicMap />
+      </div>
     </div>
   )
 }
