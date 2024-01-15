@@ -8,12 +8,13 @@ export default function Hero() {
         className="h-[800px] w-screen object-cover"
         src={HeroImage}
         alt="hero bg"
-        placeholder="blur"
       />
       <div className="absolute top-0 w-full pt-40">
         <div className="flex flex-row w-full justify-between max-w-6xl items-center mx-auto">
           <div className="px-5">
-            <p className="text-5xl font-bold">Hello, I'm Kawsar Ahmed</p>
+            <h1 role="heading" className="text-5xl font-bold">
+              Hello, I'm Kawsar Ahmed
+            </h1>
             <p className="text-lg mt-5">
               I have been working as Frontend Engineer around 5 years <br />
               Within various remote jobs in Svelte, SvelteKit, Vue, Nuxt, React,
